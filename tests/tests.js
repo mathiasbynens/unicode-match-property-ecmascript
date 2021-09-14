@@ -1,7 +1,7 @@
-import test from 'ava';
-import matchProperty from '../index.js';
+const test = require('ava');
+const matchProperty = require('../index.js');
 
-test(t => {
+test('unicode-match-property-ecmascript', t => {
 	t.deepEqual(
 		matchProperty('gc'),
 		'General_Category'
@@ -28,7 +28,7 @@ test(t => {
 	);
 	t.throws(
 		() => matchProperty('Script Extensions'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.deepEqual(
 		matchProperty('ASCII'),
@@ -52,7 +52,7 @@ test(t => {
 	);
 	t.throws(
 		() => matchProperty('emojimodifier'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.deepEqual(
 		matchProperty('Emoji_Component'),
@@ -60,82 +60,82 @@ test(t => {
 	);
 	t.throws(
 		() => matchProperty('emojicomponent'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Composition_Exclusion'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Expands_On_NFC'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Expands_On_NFD'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Expands_On_NFKC'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Expands_On_NFKD'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('FC_NFKC_Closure'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Full_Composition_Exclusion'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Grapheme_Link'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Hyphen'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_Alphabetic'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_Default_Ignorable_Code_Point'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_Grapheme_Extend'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_ID_Continue'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_ID_Start'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_Lowercase'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_Math'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Other_Uppercase'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('Prepended_Concatenation_Mark'),
-		Error
+		{ instanceOf: Error },
 	);
 	t.throws(
 		() => matchProperty('unknown property'),
-		Error
+		{ instanceOf: Error },
 	);
 });
