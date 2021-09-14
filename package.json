@@ -27,8 +27,8 @@
   },
   "bugs": "https://github.com/mathiasbynens/unicode-match-property-ecmascript/issues",
   "dependencies": {
-    "unicode-canonical-property-names-ecmascript": "^1.0.4",
-    "unicode-property-aliases-ecmascript": "^1.0.4"
+    "unicode-canonical-property-names-ecmascript": "^2.0.0",
+    "unicode-property-aliases-ecmascript": "^2.0.0"
   },
   "devDependencies": {
     "ava": "*"
